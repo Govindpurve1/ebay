@@ -1,0 +1,5 @@
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DTO\bin\Debug\DTO.dll
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DTO\bin\Debug\DTO.pdb
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DTO\obj\Debug\DTO.dll
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DTO\obj\Debug\DTO.pdb
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

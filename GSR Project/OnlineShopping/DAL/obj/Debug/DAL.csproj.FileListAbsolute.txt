@@ -1,0 +1,7 @@
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\bin\Debug\DAL.dll
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\bin\Debug\DAL.pdb
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\bin\Debug\DTO.dll
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\bin\Debug\DTO.pdb
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\obj\Debug\DAL.dll
+C:\MS Dot Net Projects\Live Projects\Working\Sandeep\Development\OnlineShopping\DAL\obj\Debug\DAL.pdb

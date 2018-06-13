@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B5045A5-7BA9-4C06-9E58-63D75523962C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnlineShopping</RootNamespace>
+    <AssemblyName>OnlineShopping</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrandItems.aspx" />
+    <Content Include="Brands.aspx" />
+    <Content Include="CardDetails.aspx" />
+    <Content Include="Cart.aspx" />
+    <Content Include="Categories.aspx" />
+    <Content Include="CategoriesItems.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="cmsAdmin.aspx" />
+    <Content Include="cmsBrands.aspx" />
+    <Content Include="cmsBrandsCreate.aspx" />
+    <Content Include="cmsBrandsEdit.aspx" />
+    <Content Include="cmsCategories.aspx" />
+    <Content Include="cmsCategoriesCreate.aspx" />
+    <Content Include="cmsCategoriesEdit.aspx" />
+    <Content Include="cmsDateWiseOrders.aspx" />
+    <Content Include="cmsFeedBack.aspx" />
+    <Content Include="cmsInventories.aspx" />
+    <Content Include="cmsItems.aspx" />
+    <Content Include="cmsItemsCreate.aspx" />
+    <Content Include="cmsItemsEdit.aspx" />
+    <Content Include="cmsOrders.aspx" />
+    <Content Include="cmsQueries.aspx" />
+    <Content Include="cmsQueriesReplay.aspx" />
+    <Content Include="Content\bootstrap\1-col-portfolio.html" />
+    <Content Include="Content\bootstrap\4-col-portfolio.html" />
+    <Content Include="Content\bootstrap\blank.html" />
+    <Content Include="Content\bootstrap\buttons.html" />
+    <Content Include="Content\bootstrap\css\1-col-portfolio.css" />
+    <Content Include="Content\bootstrap\css\4-col-portfolio.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.css" />
+    <Content Include="Content\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\bootstrap\css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="Content\bootstrap\css\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="Content\bootstrap\css\plugins\social-buttons\social-buttons.css" />
+    <Content Include="Content\bootstrap\css\plugins\timeline\timeline.css" />
+    <Content Include="Content\bootstrap\css\sb-admin.css" />
+    <Content Include="Content\bootstrap\flot.html" />
+    <Content Include="Content\bootstrap\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\bootstrap\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\bootstrap\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\bootstrap\forms.html" />
+    <Content Include="Content\bootstrap\grid.html" />
+    <Content Include="Content\bootstrap\index.html" />
+    <Content Include="Content\bootstrap\js\bootstrap.js" />
+    <Content Include="Content\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\bootstrap\js\demo\dashboard-demo.js" />
+    <Content Include="Content\bootstrap\js\demo\flot-demo.js" />
+    <Content Include="Content\bootstrap\js\demo\morris-demo.js" />
+    <Content Include="Content\bootstrap\js\jquery-1.10.2.js" />
+    <Content Include="Content\bootstrap\js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Content\bootstrap\js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="Content\bootstrap\js\plugins\flot\excanvas.min.js" />
+    <Content Include="Content\bootstrap\js\plugins\flot\jquery.flot.js" />
+    <Content Include="Content\bootstrap\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Content\bootstrap\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Content\bootstrap\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Content\bootstrap\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Content\bootstrap\js\plugins\morris\morris.js" />
+    <Content Include="Content\bootstrap\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="Content\bootstrap\js\sb-admin.js" />
+    <Content Include="Content\bootstrap\login.html" />
+    <Content Include="Content\bootstrap\morris.html" />
+    <Content Include="Content\bootstrap\notifications.html" />
+    <Content Include="Content\bootstrap\panels-wells.html" />
+    <Content Include="Content\bootstrap\tables.html" />
+    <Content Include="Content\bootstrap\typography.html" />
+    <Content Include="Display.aspx" />
+    <Content Include="FeedBack.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\BrandLogos\6_1_Samsung 5Ultrabook TouchScreen_4GBMemory-500GB Hard Drive.JPG" />
+    <Content Include="Images\BrandLogos\acer.jpg" />
+    <Content Include="Images\BrandLogos\apple.png" />
+    <Content Include="Images\BrandLogos\asus.jpg" />
+    <Content Include="Images\BrandLogos\cameras.jpg" />
+    <Content Include="Images\BrandLogos\cells.jpg" />
+    <Content Include="Images\BrandLogos\dell.jpg" />
+    <Content Include="Images\BrandLogos\hdds.jpg" />
+    <Content Include="Images\BrandLogos\hp.jpg" />
+    <Content Include="Images\BrandLogos\htc.jpg" />
+    <Content Include="Images\BrandLogos\intel.jpg" />
+    <Content Include="Images\BrandLogos\keyboards.jpg" />
+    <Content Include="Images\BrandLogos\laptops.jpg" />
+    <Content Include="Images\BrandLogos\lenovo.jpg" />
+    <Content Include="Images\BrandLogos\logitech.jpg" />
+    <Content Include="Images\BrandLogos\logo-update-null-HR.png" />
+    <Content Include="Images\BrandLogos\logo.png" />
+    <Content Include="Images\BrandLogos\mice.jpg" />
+    <Content Include="Images\BrandLogos\microsoft.png" />
+    <Content Include="Images\BrandLogos\no_image.jpg" />
+    <Content Include="Images\BrandLogos\panasonic.jpg" />
+    <Content Include="Images\BrandLogos\philips.jpg" />
+    <Content Include="Images\BrandLogos\samsung.jpeg" />
+    <Content Include="Images\BrandLogos\seagate.jpg" />
+    <Content Include="Images\BrandLogos\Slide4.png" />
+    <Content Include="Images\BrandLogos\sony.jpg" />
+    <Content Include="Images\BrandLogos\toshiba.jpg" />
+    <Content Include="Images\BrandLogos\wdpassport.jpg" />
+    <Content Include="Images\CategoryLogos\5_1_Samsung ATIVBook 8GBMemory_750GB Hard Drive.jpg" />
+    <Content Include="Images\CategoryLogos\camera.jpg" />
+    <Content Include="Images\CategoryLogos\Cell-Phone.png" />
+    <Content Include="Images\CategoryLogos\crompton-fan.jpeg" />
+    <Content Include="Images\CategoryLogos\harddisk.jpg" />
+    <Content Include="Images\CategoryLogos\Keyboard.JPG" />
+    <Content Include="Images\CategoryLogos\loptop.jpg" />
+    <Content Include="Images\CategoryLogos\microphone.jpeg" />
+    <Content Include="Images\CategoryLogos\motherboard.jpg" />
+    <Content Include="Images\CategoryLogos\no_image.jpg" />
+    <Content Include="Images\CategoryLogos\printer.jpg" />
+    <Content Include="Images\CategoryLogos\tablets.jpg" />
+    <Content Include="Images\CategoryLogos\tv.jpg" />
+    <Content Include="Images\Items\4_1_Samsung -Refurbished-10.1inch Netbook_2GBMemory-160GB HardDisk.jpg" />
+    <Content Include="Images\Items\microsoft_surface_pro_4_blue.jpeg" />
+    <Content Include="Images\Items\no_image.jpg" />
+    <Content Include="Images\Items\vivo-v3-Max.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\Onlineshop.png" />
+    <Content Include="Items.aspx" />
+    <Content Include="ItemsDisplay.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="OrdersbyDate.aspx" />
+    <Content Include="Queries.aspx" />
+    <Content Include="QueriesCreate.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Scripts\controls.js" />
+    <Content Include="Scripts\effects.js" />
+    <Content Include="Scripts\general.js" />
+    <Content Include="Admin.Master" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-form-validation-V.1.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\mm_menu.js" />
+    <Content Include="Scripts\ts_picker.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Search.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="BrandItems.aspx.cs">
+      <DependentUpon>BrandItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrandItems.aspx.designer.cs">
+      <DependentUpon>BrandItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Brands.aspx.cs">
+      <DependentUpon>Brands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brands.aspx.designer.cs">
+      <DependentUpon>Brands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CardDetails.aspx.cs">
+      <DependentUpon>CardDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CardDetails.aspx.designer.cs">
+      <DependentUpon>CardDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriesItems.aspx.cs">
+      <DependentUpon>CategoriesItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CategoriesItems.aspx.designer.cs">
+      <DependentUpon>CategoriesItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsAdmin.aspx.cs">
+      <DependentUpon>cmsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsAdmin.aspx.designer.cs">
+      <DependentUpon>cmsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsBrands.aspx.cs">
+      <DependentUpon>cmsBrands.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsBrands.aspx.designer.cs">
+      <DependentUpon>cmsBrands.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsBrandsCreate.aspx.cs">
+      <DependentUpon>cmsBrandsCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsBrandsCreate.aspx.designer.cs">
+      <DependentUpon>cmsBrandsCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsBrandsEdit.aspx.cs">
+      <DependentUpon>cmsBrandsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsBrandsEdit.aspx.designer.cs">
+      <DependentUpon>cmsBrandsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsCategories.aspx.cs">
+      <DependentUpon>cmsCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsCategories.aspx.designer.cs">
+      <DependentUpon>cmsCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsCategoriesCreate.aspx.cs">
+      <DependentUpon>cmsCategoriesCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsCategoriesCreate.aspx.designer.cs">
+      <DependentUpon>cmsCategoriesCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsCategoriesEdit.aspx.cs">
+      <DependentUpon>cmsCategoriesEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsCategoriesEdit.aspx.designer.cs">
+      <DependentUpon>cmsCategoriesEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsDateWiseOrders.aspx.cs">
+      <DependentUpon>cmsDateWiseOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsDateWiseOrders.aspx.designer.cs">
+      <DependentUpon>cmsDateWiseOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsFeedBack.aspx.cs">
+      <DependentUpon>cmsFeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsFeedBack.aspx.designer.cs">
+      <DependentUpon>cmsFeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsInventories.aspx.cs">
+      <DependentUpon>cmsInventories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsInventories.aspx.designer.cs">
+      <DependentUpon>cmsInventories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsItems.aspx.cs">
+      <DependentUpon>cmsItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsItems.aspx.designer.cs">
+      <DependentUpon>cmsItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsItemsCreate.aspx.cs">
+      <DependentUpon>cmsItemsCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsItemsCreate.aspx.designer.cs">
+      <DependentUpon>cmsItemsCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsItemsEdit.aspx.cs">
+      <DependentUpon>cmsItemsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsItemsEdit.aspx.designer.cs">
+      <DependentUpon>cmsItemsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsOrders.aspx.cs">
+      <DependentUpon>cmsOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsOrders.aspx.designer.cs">
+      <DependentUpon>cmsOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsQueries.aspx.cs">
+      <DependentUpon>cmsQueries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsQueries.aspx.designer.cs">
+      <DependentUpon>cmsQueries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cmsQueriesReplay.aspx.cs">
+      <DependentUpon>cmsQueriesReplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cmsQueriesReplay.aspx.designer.cs">
+      <DependentUpon>cmsQueriesReplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.Master.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.Master.designer.cs">
+      <DependentUpon>Customer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Items.aspx.cs">
+      <DependentUpon>Items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Items.aspx.designer.cs">
+      <DependentUpon>Items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsDisplay.aspx.cs">
+      <DependentUpon>ItemsDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ItemsDisplay.aspx.designer.cs">
+      <DependentUpon>ItemsDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersbyDate.aspx.cs">
+      <DependentUpon>OrdersbyDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrdersbyDate.aspx.designer.cs">
+      <DependentUpon>OrdersbyDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries.aspx.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Queries.aspx.designer.cs">
+      <DependentUpon>Queries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueriesCreate.aspx.cs">
+      <DependentUpon>QueriesCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueriesCreate.aspx.designer.cs">
+      <DependentUpon>QueriesCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customer.Master" />
+    <Content Include="Content\bootstrap\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\bootstrap\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\bootstrap\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\bootstrap\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\bootstrap\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\core.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\fixed-width.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\font-awesome.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\icons.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\larger.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\list.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\mixins.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\path.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\spinning.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\stacked.less" />
+    <Content Include="Content\bootstrap\font-awesome\less\variables.less" />
+    <Content Include="Content\bootstrap\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_core.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_icons.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_larger.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_list.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_path.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_spinning.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\bootstrap\font-awesome\scss\_variables.scss" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{94ad6b10-09e6-455e-9dea-258cad517cdd}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{b58a21e8-fbb7-434c-b9ab-d7c5b4cc4345}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1943/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
